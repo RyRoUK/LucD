@@ -30,4 +30,5 @@ $vars += "VC_SVC_PASSWORD=`"$SVC_PASS`" "
 $vars += "SSO_DOMAIN=`"$SSO_DOMAIN`" "
 $vars += "SSO_PASSWORD=`"$SSO_PASS`" "
 $vars += "SSO_SITENAME=`"$SSO_SITE`" "
+
 Start-Process msiexec -ArgumentList $vars –Wait

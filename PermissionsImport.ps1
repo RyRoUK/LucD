@@ -1,16 +1,16 @@
 function Import-Permissions {
-<#
-.SYNOPSIS
-Imports all Permissions from CSV file 
-.DESCRIPTION
-The function will import all permissions from a CSV file and apply them to the vCenter Server objects.
-.NOTES
-Source:  Automating vSphere Administration
-.PARAMETER Filename
-The path of the CSV file to be imported
-.EXAMPLE
-Import-Permissions -DC -Filename "C:\Temp\Permissions.csv"
-#>
+    <#
+    .SYNOPSIS
+    Imports all Permissions from CSV file 
+    .DESCRIPTION
+    The function will import all permissions from a CSV file and apply them to the vCenter Server objects.
+    .NOTES
+    Source:  Automating vSphere Administration
+    .PARAMETER Filename
+    The path of the CSV file to be imported
+    .EXAMPLE
+    Import-Permissions -DC -Filename "C:\Temp\Permissions.csv"
+    #>
     param(
         [String]$Filename
     )
@@ -65,4 +65,5 @@ Import-Permissions -DC -Filename "C:\Temp\Permissions.csv"
         }
     }
 }
+
 Import-Permissions -DC "DC01" -Filename "C:\Temp\Permissions.csv"

@@ -31,4 +31,5 @@ $json.vcsa.networking.gateway = "10.144.99.1"
 $json.vcsa.networking."dns.servers"="10.144.99.5"
 $json.vcsa.networking."system.name"="10.144.99.19"
 $json | ConvertTo-Json | Set-Content -Path "$updatedconfig"
+
 Invoke-Expression "$installer $updatedconfig"

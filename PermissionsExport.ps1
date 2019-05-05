@@ -1,16 +1,16 @@
 function Export-PermissionsToCSV {
-<#
-.SYNOPSIS
-Exports all Permissions to CSV file
-.DESCRIPTION
-The function will export all permissions to a CSV based file for later import
-.NOTES
-​ Source:  Automating vSphere Administration
-.PARAMETER Filename
-The path of the CSV file to be created
-.EXAMPLE
-Export-PermissionsToCSV -Filename "C:\Temp\Permissions.csv"
-#>
+    <#
+    .SYNOPSIS
+    Exports all Permissions to CSV file
+    .DESCRIPTION
+    The function will export all permissions to a CSV based file for later import
+    .NOTES
+    ​ Source:  Automating vSphere Administration
+    .PARAMETER Filename
+    The path of the CSV file to be created
+    .EXAMPLE
+    Export-PermissionsToCSV -Filename "C:\Temp\Permissions.csv"
+    #>
     param(
         [String]$Filename
     )
